@@ -67,7 +67,7 @@ create table course_offers (
 
 create table student (
     first_name varchar(40) not null,
-    last_name varchar(40) not null,
+    last_name varchar(40),
     student_id char(11) not null CHECK (length(student_id) = 10),
     address varchar(100),
     contact_number char(10) not null,
